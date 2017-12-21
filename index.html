@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>New York Times Search</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" crossorigin="anonymous">
+
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
+
 
   <!-- Style to fix the issue of text extending past panel length -->
   <style>
@@ -21,23 +23,42 @@
             <div class="container">
 
               <!-- Jumbotron for Title -->
-              <div class="jumbotron" style="background-color: #20315A ; color: white;">
-                <h1 class="text-center"><strong><i class="fa fa-newspaper-o"></i> New York Times Search</strong></h1>
+          <div class="jumbotron" style="background-color: #20315A ; color: white;">
+            <h1 class="text-center"><strong><i class="fa fa-newspaper-o"></i> New York Times Search</strong></h1>
+          </div>
+
+                <div class="card">
+                  <h4 class="card-header">Search Parameters</h4>
+                  <div class="card-body">
+                  
+              <div class="form-group">
+                <label for="search">Search Term:</label>
+                <input type="text" class="form-control" id="searchButton">
               </div>
 
-              <div class="card">
-                <h4 class="card-header">Search Parameters</h4>
-                <div class="card-body">
-                  <h4 class="card-title">Special title treatment</h4>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <div class="form-group">
+                <label for="search">Number of Records to Retrieve:</label>
+                <input type="text" class="form-control" id="records">
+              </div>
+
+              <div class="form-group">
+                <label for="search">Start Year:</label>
+                <input type="text" class="form-control" id="startYr">
+              </div>
+
+              <div class="form-group">
+                <label for="search">End Year:</label>
+                <input type="text" class="form-control" id="endYr">
+              </div>
                   <a href="#" class="btn btn-primary">Search</a>
+                  </div>
                 </div>
-              </div>
 
-              <script src="https://code.jquery.com/jquery.js"></script>
-            <!-- Code to the JavaScript File -->
-            <script src="app.js"></script>
-            </div>
+
+          <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Code to the JavaScript File -->
+        <script src="app.js"></script>
+        </div>
 
 
 
